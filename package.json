@@ -1,0 +1,14 @@
+{
+  "name": "HighDev Web Template",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Parinyakiat",
+  "license": "HighDev",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6"
+  }
+}
