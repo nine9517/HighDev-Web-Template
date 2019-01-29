@@ -1,59 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <link
-      rel="stylesheet"
-      href="assets/dist/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Dashboard</title>
-  </head>
-  <body>
-    <div class="container-page">
-      <div class="row">
-        <div class="col menu">
-            <!-- Logo -->
-          <div class="logo"><div class="logo-content">Logo</div></div>
-            <!-- End Logo -->
+  <link rel="stylesheet" href="assets/dist/bootstrap/dist/css/bootstrap.min.css" />
+  <link href="assets/dist/fontawesome/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/dashboard.css" />
 
-            <!-- Side Menu -->
-          <ul class="nav flex-column">
-            <li class="nav-item"><a class="nav-link" href="#">ลูกค้า</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">พนักงาน</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">คู่ค้า</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">คลังสินค้า</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">การบริการ</a></li>
-          </ul>
-          <!-- End Side Menu -->
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="container-page">
+    <div class="row">
+      <div class="col menu">
+        <!-- Logo -->
+        <div class="logo">
+          <div class="logo-content">Logo</div>
         </div>
-        <div class="col nav">
-          <div class="box">
-              <!-- Nav bar Menu -->
-            <div class="nav-bar">
-              <a class="btn btn-link" href="#" role="button">Logout</a>
-            </div>
-            <!-- End Nav bar Menu -->
+        <!-- End Logo -->
 
-            <!-- Content -->
-            <div class="content-box">Text</div>
-            <!-- End Content -->
+        <!-- Side Menu -->
+        <ul class="nav flex-column">
+          <li class="nav-item"><a class="nav-link active" href="index.html">หน้าหลัก</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">ลูกค้า</a></li>
+          <li class="nav-item"><a class="nav-link" href="employee.html">พนักงาน</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">คู่ค้า</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">คลังสินค้า</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">การบริการ</a></li>
+        </ul>
+        <!-- End Side Menu -->
+      </div>
+      <div class="col nav">
+        <div class="box">
+          <!-- Nav bar Menu -->
+          <div class="nav-bar">
+            <a class="btn btn-link" href="#" role="button">Logout</a>
           </div>
+          <!-- End Nav bar Menu -->
+
+          <!-- Content -->
+          <div class="content-box">
+            <!-- change your content -->
+            <div class="row icon-bar">
+              <div class="col-md">
+                <div class="icon-box">
+                    <div class="icon-img"><i class="fas fa-user-tie"></i></div>
+                    <div class="icon-title">Employee</div>
+                    <div class="icon-content">45</div>
+                </div>
+              </div>
+              <div class="col-md">
+                  <div class="icon-box">
+                      <div class="icon-img"><i class="fas fa-user"></i></div>
+                      <div class="icon-title">Customers</div>
+                      <div class="icon-content">165</div>
+                  </div>
+              </div>
+              <div class="col-md">
+                  <div class="icon-box">
+                      <div class="icon-img"><i class="fas fa-hand-holding-usd"></i></div>
+                      <div class="icon-title">Income</div>
+                      <div class="icon-content">80,540</div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="chart">
+                <canvas id="chart" style="width: 80%;"></canvas>
+            </div>
+
+            <!-- end change your content -->
+          </div>
+          <!-- End Content -->
         </div>
       </div>
     </div>
-    <div class="bg-menu"></div>
+  </div>
+  <div class="bg-menu"></div>
 
-    <script src="assets/dist/jquery/dist/jquery.min.js"></script>
-    <script src="assets/dist/popper.js/dist/umd/popper.min.js"></script>
-    <script src="assets/dist/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+  <script src="assets/dist/jquery/dist/jquery.min.js"></script>
+  <script src="assets/dist/popper.js/dist/umd/popper.min.js"></script>
+  <script src="assets/dist/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="assets/js/Chart.min.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+
 </html>

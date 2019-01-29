@@ -1,0 +1,41 @@
+.icon-bar{
+    width: 100%;
+}
+
+.icon-bar > .col-md{
+
+    background: #ccc;
+    height: 15vw;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.icon-bar > .col-md > .icon-box{
+
+}
+
+.icon-bar > .col-md > .icon-box {
+    transition: .3s all;
+}
+
+.icon-bar > .col-md > .icon-box > div{
+    text-align: center;
+}
+
+.icon-bar > .col-md:hover > .icon-box{
+    margin-top: -30px;
+}
+
+.icon-img{
+    font-size: 3em;
+}
+.icon-title{
+    font-size: 2em;
+    margin-top: -15px;
+}
+.icon-content{
+    font-size: 1em;
+}

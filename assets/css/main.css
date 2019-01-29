@@ -1,3 +1,4 @@
+
 .body{
     margin: 0px;
 }
@@ -68,6 +69,11 @@
     color: #fff !important;
 }
 .menu > .nav > li > a:hover{
+    color: #6d6b6b !important;
+    background: #fff;
+}
+
+.menu > .nav > li > a.active{
     color: #6d6b6b !important;
     background: #fff;
 }
