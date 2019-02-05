@@ -1,0 +1,15 @@
+.bt-100-p{
+    width: 100%;
+}
+.table-content{
+    margin-top: 15px;
+}
+th > hr{
+    border-top: 1px solid #fff;
+}
+td > hr{
+    border-top: 1px solid #000;
+}
+table,td{
+    border: 1px solid#212529;
+}

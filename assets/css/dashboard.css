@@ -40,7 +40,13 @@
 .icon-content{
     font-size: 1em;
 }
-.chart-box,.icon-container{
+.chart-box{
     display: flex;
     justify-content: center;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    margin-top:35px; 
 }

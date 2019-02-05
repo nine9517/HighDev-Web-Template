@@ -12,8 +12,9 @@
       href="assets/dist/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/employee.css" />
 
-    <title>Dashboard</title>
+    <title>Employee</title>
   </head>
   <body>
     <div class="container-page">
@@ -25,8 +26,8 @@
 
             <!-- Side Menu -->
             <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link active" href="index.html">หน้าหลัก</a></li>
-                <li class="nav-item"><a class="nav-link" href="employee.html">จัดการพนักงาน</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">หน้าหลัก</a></li>
+                <li class="nav-item"><a class="nav-link active" href="employee.html">จัดการพนักงาน</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">จัดการลูกค้าา</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">จัดการการขาย</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">จัดการการซื้อ</a></li>
@@ -41,12 +42,54 @@
           <div class="box">
               <!-- Nav bar Menu -->
             <div class="nav-bar">
-              <a class="btn btn-link" href="#" role="button">Logout</a>
+              <a class="btn btn-link" href="#" role="button">ออกจากระบบ</a>
             </div>
             <!-- End Nav bar Menu -->
 
             <!-- Content -->
-            <div class="content-box">Text</div>
+            <div class="content-box">
+              <div class="search">
+                <div class="row">
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-dark bt-100-p">เพิ่มพนักงาน</button>
+                  </div>
+                  <div class="col-md-5">
+                    <input type="text" class="form-control" placeholder="ค้นหาข้อมูล">
+                  </div>
+                  <div class="col-md-3">
+                    <button type="button" class="btn btn-dark bt-100-p">ค้นหา</button>
+                  </div>
+                </div>
+              </div>
+              <table class="table table-hover table-content">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th style="width: 30%"><hr></th>
+                      <th style="width: 40%"><hr></th>
+                      <th style="width: 30%"><hr></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><hr></td>
+                      <td><hr></td>
+                      <td>
+                        
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><hr></td>
+                      <td><hr></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><hr></td>
+                      <td><hr></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
             <!-- End Content -->
           </div>
         </div>
