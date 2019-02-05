@@ -15,7 +15,7 @@
 
 <body>
   <div class="container-page">
-    <div class="row">
+    <div class="row flex-nowrap">
       <div class="col menu">
         <!-- Logo -->
         <div class="logo">
@@ -26,13 +26,14 @@
         <!-- Side Menu -->
         <ul class="nav flex-column">
           <li class="nav-item"><a class="nav-link active" href="index.html">หน้าหลัก</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">ลูกค้า</a></li>
-          <li class="nav-item"><a class="nav-link" href="employee.html">พนักงาน</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">คู่ค้า</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">คลังสินค้า</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#">การบริการ</a></li>
+            <li class="nav-item"><a class="nav-link" href="employee.html">จัดการพนักงาน</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">จัดการลูกค้าา</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">จัดการการขาย</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">จัดการการซื้อ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">จัดการการซ่อม</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">จัดการการเดินทะเบียน</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">จัดการข้อมูลรถ</a></li>
+   
         </ul>
         <!-- End Side Menu -->
       </div>
@@ -40,40 +41,44 @@
         <div class="box">
           <!-- Nav bar Menu -->
           <div class="nav-bar">
-            <a class="btn btn-link" href="#" role="button">Logout</a>
+            <a class="btn btn-link" href="#" role="button">ออกจากระบบ</a>
           </div>
           <!-- End Nav bar Menu -->
 
           <!-- Content -->
-          <div class="content-box">
+          <div>
             <!-- change your content -->
+            <div class="icon-container">
             <div class="row icon-bar">
               <div class="col-md">
                 <div class="icon-box">
                     <div class="icon-img"><i class="fas fa-user-tie"></i></div>
-                    <div class="icon-title">Employee</div>
+                    <div class="icon-title">พนักงาน</div>
                     <div class="icon-content">45</div>
                 </div>
               </div>
               <div class="col-md">
                   <div class="icon-box">
                       <div class="icon-img"><i class="fas fa-user"></i></div>
-                      <div class="icon-title">Customers</div>
+                      <div class="icon-title">ลูกค้า</div>
                       <div class="icon-content">165</div>
                   </div>
               </div>
               <div class="col-md">
                   <div class="icon-box">
                       <div class="icon-img"><i class="fas fa-hand-holding-usd"></i></div>
-                      <div class="icon-title">Income</div>
+                      <div class="icon-title">รายได้</div>
                       <div class="icon-content">80,540</div>
                   </div>
               </div>
             </div>
-
-            <div class="chart">
-                <canvas id="chart" style="width: 80%;"></canvas>
             </div>
+            <div class="chart-box">
+                <div class="chart" style="width: 90%">
+                    <canvas id="chart" ></canvas>
+                </div>
+            </div>
+            
 
             <!-- end change your content -->
           </div>
@@ -82,7 +87,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-menu"></div>
+  <!-- <div class="bg-menu"></div> -->
 
   <script src="assets/dist/jquery/dist/jquery.min.js"></script>
   <script src="assets/dist/popper.js/dist/umd/popper.min.js"></script>

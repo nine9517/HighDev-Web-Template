@@ -1,11 +1,11 @@
 
-		var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+		var MONTHS = ["มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"];
 		var config = {
 			type: 'line',
 			data: {
-				labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+				labels: ['มกราคม', 'กุมภาพันธ์', 'มีนาคม', 'เมษายน', 'พฤษภาคม', 'มิถุนายน', 'กรกฎาคม'],
 				datasets: [{
-					label: 'Income in month',
+					label: 'รายได้ในเดือนนี้',
 					backgroundColor: '#6d6b6b',
 					borderColor:'#6d6b6b',
 					data: [
@@ -24,7 +24,7 @@
 				responsive: true,
 				title: {
 					display: true,
-					text: 'Income'
+					text: 'รายได้'
 				},
 				tooltips: {
 					mode: 'index',
@@ -39,14 +39,14 @@
 						display: true,
 						scaleLabel: {
 							display: true,
-							labelString: 'Month'
+							labelString: 'เดือน'
 						}
 					}],
 					yAxes: [{
 						display: true,
 						scaleLabel: {
 							display: true,
-							labelString: 'Value'
+							labelString: 'จำนวนเงิน'
 						}
 					}]
 				}
@@ -58,4 +58,5 @@
 			window.myLine = new Chart(ctx, config);
 		};
 
+		
 		

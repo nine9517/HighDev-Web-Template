@@ -1,11 +1,15 @@
 
 .body{
     margin: 0px;
+    overflow-x:hidden;
 }
 .menu{
     max-width: 250px;
-    background:transparent;
+    min-width: 250px;
+    flex: 0 0 250px;
+    background:#6d6b6b;
     padding-right: 0px;
+    min-height: 100vh;
 }
 .container-page > .row{
     margin-left: 0px;

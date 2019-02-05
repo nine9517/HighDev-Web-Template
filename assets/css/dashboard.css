@@ -1,11 +1,12 @@
 .icon-bar{
-    width: 100%;
+    margin: 0px;
+    width:90%;
 }
 
 .icon-bar > .col-md{
 
     background: #ccc;
-    height: 15vw;
+    min-height: 15vw;
     margin: 5px;
     display: flex;
     justify-content: center;
@@ -38,4 +39,8 @@
 }
 .icon-content{
     font-size: 1em;
+}
+.chart-box,.icon-container{
+    display: flex;
+    justify-content: center;
 }
