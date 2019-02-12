@@ -46,7 +46,7 @@
 						display: true,
 						scaleLabel: {
 							display: true,
-							labelString: 'จำนวนเงิน'
+							labelString: 'จำนวนเงิน (บาท)'
 						}
 					}]
 				}

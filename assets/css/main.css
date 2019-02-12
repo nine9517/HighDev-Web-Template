@@ -39,6 +39,10 @@
     justify-content: center;
     align-items: center;
     margin-right: 15px;
+    background-image: url('../img/logo.png');
+    background-position: center 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .nav-bar{
     display: flex;
